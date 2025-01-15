@@ -42,7 +42,7 @@ function Table() {
                         <button className="btn btn-primary m-2" onClick={() => handleClick("health")}>Health</button>
                         <button className="btn btn-primary m-2" onClick={() => handleClick("sports")}>Sports</button>
                         <button className="btn btn-primary m-2" onClick={() => handleClick("entertainment")}>Entertainment</button>
-                        { newsData && <CSVLink data={cleanNewsData} className="btn btn-info m-2">Download CSV</CSVLink> }
+                        { newsData && <CSVLink data={cleanNewsData} className="btn btn-info m-2">Export to CSV</CSVLink> }
                         { newsData &&  <button className="btn btn-info m-2" onClick={() => handleExport()}>Export to XLS</button> }
                         { newsData &&  <button className="btn btn-secondary m-2" onClick={() => handleCleanup()}>Clean Data Table</button> }
                     </div>
